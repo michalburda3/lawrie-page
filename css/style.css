@@ -43,7 +43,7 @@ header nav {
 
 .jumbotron {
   height: 80vh;
-  background: url("https://images.pexels.com/photos/177625/pexels-photo-177625.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") 0/cover no-repeat;
+  background: url("../img/jumbo2.jpeg") 0/cover no-repeat;
   background-attachment: fixed; }
   .jumbotron h1 {
     color: #fff; }

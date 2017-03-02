@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed')
+
+$bg-color: #063350
+$font-color: #ecf0f1
+$contrast-color: #c0392b
+
+=underline ($underlineWidth: 200px, $underlineHeigth: 4px)
+		background-color: $contrast-color
+		width: $underlineWidth
+		height: $underlineHeigth
+		border-top: none
+		margin: 10px auto
+
+
+body
+	background-color: $bg-color
+	color: $font-color
+	font-family: 'Ubuntu Condensed', sans-serif
+
+
+
+header	
+
+	.navbar-default
+		background-color: $bg-color
+		border: none
+
+		.navbar-toggle
+		border: none
+		background-color: inherit
+		font-size: 25px
+		&:hover,
+		&:focus
+			background-color: inherit
+
+		.navbar-nav 
+			li 
+				a 
+					color: $font-color
+					font-size: 3.2rem
+					text-transform: uppercase
+					margin-right: 5.5rem
+					margin-top: 4.5rem
+
+					&:after
+						content: ''
+						display: block
+						margin: auto
+						margin-top: 10px
+						height: 2px
+						width: 0px
+						background: transparent
+						transition: width .5s ease, background-color .5s ease
+
+					&:hover:after
+						width: 100%
+						background: $contrast-color
+
+					&:hover,
+					&:focus
+						color: $font-color
+
+
+
+				
+
+
+
+	nav
+		
+		height: 20vh
+		margin: 0 auto
+
+		div
+			a 
+				img
+					height: 200px
+					width: 350px
+					margin: 30px 50px 0px
+
+		
+
+.jumbotron
+	height: 80vh
+	// width: 400px
+	background: url("https://images.pexels.com/photos/177625/pexels-photo-177625.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") 0/cover no-repeat
+	// position: relative
+	background-attachment: fixed
+	h1
+		// margin-top: calc(80vh/4)
+		color: #fff
+		// width: 350px
+		// position: absolute
+
+.offer
+
+	h2
+		margin: 9rem auto 1rem
+		text-transform: uppercase
+		letter-spacing: 1px
+		font-size: 4rem
+
+	hr
+		+underline(400px, 2px)
+
+	h4	
+		letter-spacing: 1px
+		font-size: 2rem
+		margin-top: 2rem
+
+	div
+		margin: 0 auto
+		div
+			img
+				margin: 7rem auto
+				&:hover
+					transform: scale(1.1)
+					transition: all .5s ease
+
+			h3
+				text-transform: uppercase
+				font-size: 2.5rem
+
+
+.aboutUs
+	margin: 2rem auto 4rem
+
+	h2
+		margin: 9rem auto 4rem
+		text-transform: uppercase
+		letter-spacing: 1px
+		font-size: 4rem
+
+	
+
+	div
+		h4
+
+			margin: 2rem auto 1rem
+			text-transform: uppercase
+			letter-spacing: 1px
+			font-size: 3rem
+
+		hr 
+			+underline(250px, 2px)
+
+		p 
+			margin: 2rem auto 2rem
+			padding: 1.5rem
+			font-size: 2rem
+
+
+.stats
+	margin: 8rem auto 2rem
+	text-align: center
+	padding: 2rem
+	height: 25vh
+
+	div
+		h3
+			color: $contrast-color
+			font-size: 6rem
+			padding: 1rem
+			font-weight: 900
+
+		p
+			color: $font-color
+			font-size: 3rem
+
+
+
+
+
+
+.getInTouch
+	margin: 4rem auto
+	padding: 6rem auto
+
+	h2
+		margin: 9rem auto 1rem
+		text-transform: uppercase
+		letter-spacing: 1px
+		font-size: 4rem
+
+	hr
+		+underline(250px, 2px)
+
+	div
+		font-size: 2.5rem
+		padding: 1rem
+
+
+		div
+
+			div:first-of-type
+				text-align: right
+				color: $contrast-color
+		
+
+			div
+				a
+					text-decoration: none
+					color: $font-color
+
+					&:hover
+						color: $contrast-color
+
+
+		h3
+
+	h3
+		font-size: 4rem
+
+	.wrapper
+		button
+			font-size: 4rem
+			color: $font-color
+			background-color: $contrast-color
+			border-radius: 50%
+			padding: 1rem
+			margin-right: 2rem
+			margin-top: 3rem
+			width: 70px
+			height: 70px
+			border: none
+			transition: all 0.5s ease
+
+			&:hover
+				color: $contrast-color
+				background-color: $font-color
+
+			a 
+				text-decoration: none
+				border: none
+				color: inherit
+
+				&:hover
+					color: inherit

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+body {
+  background-color: #063350;
+  color: #ecf0f1;
+  font-family: 'Ubuntu Condensed', sans-serif; }
+
+header .navbar-default {
+  background-color: #063350;
+  border: none;
+  border: none;
+  background-color: inherit;
+  font-size: 25px; }
+  header .navbar-default:hover, header .navbar-default:focus {
+    background-color: inherit; }
+  header .navbar-default .navbar-nav li a {
+    color: #ecf0f1;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin-right: 5.5rem;
+    margin-top: 4.5rem; }
+    header .navbar-default .navbar-nav li a:after {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+      height: 2px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease; }
+    header .navbar-default .navbar-nav li a:hover:after {
+      width: 100%;
+      background: #c0392b; }
+    header .navbar-default .navbar-nav li a:hover, header .navbar-default .navbar-nav li a:focus {
+      color: #ecf0f1; }
+
+header nav {
+  height: 20vh;
+  margin: 0 auto; }
+  header nav div a img {
+    height: 200px;
+    width: 350px;
+    margin: 30px 50px 0px; }
+
+.jumbotron {
+  height: 80vh;
+  background: url("https://images.pexels.com/photos/177625/pexels-photo-177625.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") 0/cover no-repeat;
+  background-attachment: fixed; }
+  .jumbotron h1 {
+    color: #fff; }
+
+.offer h2 {
+  margin: 9rem auto 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 4rem; }
+
+.offer hr {
+  background-color: #c0392b;
+  width: 400px;
+  height: 2px;
+  border-top: none;
+  margin: 10px auto; }
+
+.offer h4 {
+  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-top: 2rem; }
+
+.offer div {
+  margin: 0 auto; }
+  .offer div div img {
+    margin: 7rem auto; }
+    .offer div div img:hover {
+      transform: scale(1.1);
+      transition: all .5s ease; }
+  .offer div div h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem; }
+
+.aboutUs {
+  margin: 2rem auto 4rem; }
+  .aboutUs h2 {
+    margin: 9rem auto 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 4rem; }
+  .aboutUs div h4 {
+    margin: 2rem auto 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3rem; }
+  .aboutUs div hr {
+    background-color: #c0392b;
+    width: 250px;
+    height: 2px;
+    border-top: none;
+    margin: 10px auto; }
+  .aboutUs div p {
+    margin: 2rem auto 2rem;
+    padding: 1.5rem;
+    font-size: 2rem; }
+
+.stats {
+  margin: 8rem auto 2rem;
+  text-align: center;
+  padding: 2rem;
+  height: 25vh; }
+  .stats div h3 {
+    color: #c0392b;
+    font-size: 6rem;
+    padding: 1rem;
+    font-weight: 900; }
+  .stats div p {
+    color: #ecf0f1;
+    font-size: 3rem; }
+
+.getInTouch {
+  margin: 4rem auto;
+  padding: 6rem auto; }
+  .getInTouch h2 {
+    margin: 9rem auto 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 4rem; }
+  .getInTouch hr {
+    background-color: #c0392b;
+    width: 250px;
+    height: 2px;
+    border-top: none;
+    margin: 10px auto; }
+  .getInTouch div {
+    font-size: 2.5rem;
+    padding: 1rem; }
+    .getInTouch div div div:first-of-type {
+      text-align: right;
+      color: #c0392b; }
+    .getInTouch div div div a {
+      text-decoration: none;
+      color: #ecf0f1; }
+      .getInTouch div div div a:hover {
+        color: #c0392b; }
+  .getInTouch h3 {
+    font-size: 4rem; }
+  .getInTouch .wrapper button {
+    font-size: 4rem;
+    color: #ecf0f1;
+    background-color: #c0392b;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    width: 70px;
+    height: 70px;
+    border: none;
+    transition: all 0.5s ease; }
+    .getInTouch .wrapper button:hover {
+      color: #c0392b;
+      background-color: #ecf0f1; }
+    .getInTouch .wrapper button a {
+      text-decoration: none;
+      border: none;
+      color: inherit; }
+      .getInTouch .wrapper button a:hover {
+        color: inherit; }
+
+/*# sourceMappingURL=style.css.map */

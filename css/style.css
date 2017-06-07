@@ -40,13 +40,23 @@ header nav {
     height: 200px;
     width: 350px;
     margin: 5px 30px 5px; }
+    @media screen and (max-width: 750px) {
+      header nav div a img {
+        margin: 0; } }
 
 .jumbotron {
   height: 80vh;
   background: url("../img/jumbo2.jpeg") 0/cover no-repeat;
   background-attachment: fixed; }
+  @media screen and (max-width: 970px) {
+    .jumbotron {
+      background-position: 60%;
+      height: 60vh; } }
   .jumbotron h1 {
     color: #fff; }
+    @media screen and (max-width: 970px) {
+      .jumbotron h1 {
+        margin-top: 120px; } }
 
 .offer h2 {
   margin: 9rem auto 1rem;
@@ -60,6 +70,9 @@ header nav {
   height: 2px;
   border-top: none;
   margin: 10px auto; }
+  @media screen and (max-width: 750px) {
+    .offer hr {
+      max-width: 80%; } }
 
 .offer h4 {
   letter-spacing: 1px;
@@ -204,6 +217,9 @@ header nav {
   margin-right: auto;
   margin-top: 50px;
   max-width: 600px; }
+  @media screen and (max-width: 750px) {
+    .checktrade__img {
+      max-width: 100%; } }
 
 .getInTouch {
   margin: 4rem auto;

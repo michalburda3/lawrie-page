@@ -71,15 +71,24 @@ header
 					width: 350px
 					margin: 5px 30px 5px
 
+					@media screen and (max-width:750px)
+						margin: 0
+
 		
 
 .jumbotron
 	height: 80vh
 	background: url("../img/jumbo2.jpeg") 0/cover no-repeat
 	background-attachment: fixed
-	h1
+	@media screen and (max-width:970px)
+		background-position: 60%
+		height: 60vh
 
+		
+	h1
 		color: #fff
+		@media screen and (max-width:970px)
+			margin-top: 120px
 
 .offer
 	
@@ -92,6 +101,8 @@ header
 
 	hr
 		+underline(400px, 2px)
+		@media screen and (max-width:750px)
+			max-width: 80%
 
 	h4	
 		letter-spacing: 1px
@@ -260,6 +271,10 @@ header
 		margin-right: auto
 		margin-top: 50px
 		max-width: 600px
+
+		@media screen and (max-width:750px)
+			max-width: 100%
+			
 
 .getInTouch
 	margin: 4rem auto

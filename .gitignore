@@ -1,4 +1,4 @@
 node_modules
 TERMS_AND_CONDITIONS.pdf
 ignore
-css/style.css.map
+css/*.*

@@ -182,17 +182,12 @@ header nav {
       #clients div figure img:hover {
         opacity: 0.7;
         transition: 0.2s all ease; }
-    #clients div figure figcaption a {
+    #clients div figure figcaption {
       text-decoration: none;
       color: #ecf0f1;
       padding: 10px;
       margin: 5px;
       font-size: 24px; }
-      #clients div figure figcaption a:hover {
-        cursor: pointer;
-        opacity: 0.9;
-        transition: 0.2s all ease;
-        color: #c0392b; }
 
 .checktrade__title {
   margin: 9rem auto 1rem;

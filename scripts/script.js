@@ -17,11 +17,9 @@ $(document).ready(function(){
 
 
 	$('.counter').counterUp({
-	    delay: 10,
-	    time: 1700
+		delay: 10,
+		time: 1700
 	});
-
-	
 });    
 
 

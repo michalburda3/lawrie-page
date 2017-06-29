@@ -20,7 +20,17 @@ $(document).ready(function(){
 		delay: 10,
 		time: 1700
 	});
-});    
+});  
+
+$(function() { 
+	$(".navbar-toggle").on("click", function () {
+		$(this).toggleClass("active");
+	});
+	$('a[href^="#"]').click(function (e) {
+		$('.navbar-collapse').collapse('hide'); 
+		$('.navbar-toggle').removeClass('active'); 
+	});
+});
 
 
 $(function() {

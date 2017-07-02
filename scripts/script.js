@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
 	$("#span_toggle_1").click(function(){
 		$("#toggle_list_1").slideToggle(450);
 	});
@@ -14,7 +12,6 @@ $(document).ready(function(){
 	$("#span_toggle_4").click(function(){
 		$("#toggle_list_4").slideToggle(450);
 	});
-
 
 	$('.counter').counterUp({
 		delay: 10,
@@ -30,8 +27,6 @@ $(function() {
 		$('.navbar-collapse').collapse('hide'); 
 		$('.navbar-toggle').removeClass('active'); 
 	});
-
-	
 });
 
 

@@ -4,48 +4,82 @@ body {
   color: #ecf0f1;
   font-family: 'Ubuntu Condensed', sans-serif; }
 
+header .navbar-collapse {
+  background-color: #063350; }
+  @media screen and (min-width: 1199px) and (max-width: 140px) {
+    header .navbar-collapse {
+      width: 970px; } }
+
+header .affix {
+  box-shadow: 0 0 0 0 #ecf0f1; }
+
 header .navbar-default {
   background-color: #063350;
   border: none;
+  margin-bottom: 0;
   border: none;
   background-color: inherit;
   font-size: 25px; }
   header .navbar-default:hover, header .navbar-default:focus {
     background-color: inherit; }
-  header .navbar-default .navbar-nav li a {
-    color: #ecf0f1;
-    font-size: 3.2rem;
-    text-transform: uppercase;
-    margin-right: 5.5rem;
-    margin-top: 4.5rem; }
-    @media screen and (max-width: 1400px) {
-      header .navbar-default .navbar-nav li a {
-        margin-right: 0; } }
-    header .navbar-default .navbar-nav li a:after {
+  header .navbar-default .navbar-nav {
+    margin: 30px 0; }
+    @media screen and (max-width: 1440px) {
+      header .navbar-default .navbar-nav {
+        margin: 13px 0; } }
+    header .navbar-default .navbar-nav .active:after {
       content: '';
       display: block;
-      margin: auto;
-      margin-top: 10px;
       height: 2px;
-      width: 0px;
-      background: transparent;
-      transition: width .5s ease, background-color .5s ease; }
-    header .navbar-default .navbar-nav li a:hover:after {
       width: 100%;
-      background: #c0392b; }
-    header .navbar-default .navbar-nav li a:hover, header .navbar-default .navbar-nav li a:focus {
+      background-color: #c0392b;
+      position: relative;
+      top: -20px; }
+    header .navbar-default .navbar-nav .active > a {
+      background-color: #063350;
       color: #ecf0f1; }
+      header .navbar-default .navbar-nav .active > a:hover, header .navbar-default .navbar-nav .active > a:active, header .navbar-default .navbar-nav .active > a:focus {
+        background-color: #063350;
+        color: #ecf0f1;
+        outline: none; }
+    header .navbar-default .navbar-nav li a {
+      color: #ecf0f1;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-weight: 700; }
+      @media screen and (max-width: 1400px) {
+        header .navbar-default .navbar-nav li a {
+          margin-right: 0; } }
+      @media screen and (max-width: 1440px) {
+        header .navbar-default .navbar-nav li a {
+          font-size: 1.6rem; } }
+      header .navbar-default .navbar-nav li a:after {
+        content: '';
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        height: 2px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease; }
+      header .navbar-default .navbar-nav li a:hover:after {
+        width: 100%;
+        background: #c0392b; }
+      header .navbar-default .navbar-nav li a:hover, header .navbar-default .navbar-nav li a:focus {
+        color: #ecf0f1;
+        outline: none; }
 
 header nav {
-  height: 20vh;
   margin: 0 auto; }
   header nav div a img {
-    height: 200px;
-    width: 350px;
-    margin: 5px 30px 5px; }
+    width: 250px;
+    margin: 0 auto; }
     @media screen and (max-width: 750px) {
       header nav div a img {
         margin: 0; } }
+    @media screen and (max-width: 1440px) {
+      header nav div a img {
+        width: 170px; } }
 
 .jumbotron {
   height: 80vh;
@@ -303,11 +337,6 @@ footer {
       footer p a:hover {
         color: #c0392b;
         text-decoration: none; }
-
-.affix {
-  background-color: #ffffff;
-  padding: 20px 0 10px 0;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); }
 
 @media screen and (max-width: 768px) {
   .offer h2 {

@@ -18,10 +18,19 @@ body
 	font-family: 'Ubuntu Condensed', sans-serif
 
 header	
+	.navbar-collapse
+		background-color: $bg-color
+		width: 1170px
+
+	.affix
+		box-shadow: 0 4px 0 0 $contrast-color
+	
+		
 
 	.navbar-default
 		background-color: $bg-color
 		border: none
+		margin-bottom: 0
 
 		.navbar-toggle
 		border: none
@@ -30,15 +39,26 @@ header
 		&:hover,
 		&:focus
 			background-color: inherit
+		
+		.navbar-fixed-top 
+			// transition: background-color 0.5s linear, padding 0.5s linear
 
 		.navbar-nav 
+			margin: 35px 0
+			@media screen and (max-width:1440px)
+				margin: 13px 0
+
+			.active 
+				> a
+					background-color: $contrast-color
+					color: $font-color
+
 			li 
 				a 
 					color: $font-color
-					font-size: 3.2rem
+					font-size: 2.6rem
 					text-transform: uppercase
-					margin-right: 5.5rem
-					margin-top: 4.5rem
+					font-weight: 700
 					@media screen and (max-width:1400px)
 						margin-right: 0
 					@media screen and (max-width:1105px)
@@ -64,18 +84,22 @@ header
 
 	nav
 		
-		height: 20vh
+		// height: 20vh
 		margin: 0 auto
 
 		div
 			a 
 				img
-					height: 200px
-					width: 350px
-					margin: 5px 30px 5px
+					// height: 200px
+					width: 270px
+					margin: 0 auto
+
 
 					@media screen and (max-width:750px)
 						margin: 0
+					@media screen and (max-width:1440px)
+						width: 170px
+
 
 		
 
@@ -377,10 +401,7 @@ footer
 
 
 
-.affix
-	background-color: #ffffff
-	padding: 20px 0 10px 0
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)
+
 
 @media screen and (max-width: 768px)
 

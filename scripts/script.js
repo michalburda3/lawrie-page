@@ -30,6 +30,8 @@ $(function() {
 		$('.navbar-collapse').collapse('hide'); 
 		$('.navbar-toggle').removeClass('active'); 
 	});
+
+	
 });
 
 
@@ -47,4 +49,5 @@ $(function() {
     }
   });
 });
+
 

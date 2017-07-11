@@ -4,22 +4,42 @@ body {
   color: #ecf0f1;
   font-family: 'Ubuntu Condensed', sans-serif; }
 
+@media screen and (max-width: 768px) {
+  .affix {
+    display: none; } }
+
 header .navbar-collapse {
   background-color: #063350; }
-  @media screen and (min-width: 1199px) and (max-width: 140px) {
-    header .navbar-collapse {
-      width: 970px; } }
 
 header .affix {
-  box-shadow: 0 0 0 0 #ecf0f1; }
+  max-height: 110px; }
+  @media screen and (max-width: 768px) {
+    header .affix {
+      display: none; } }
+
+header .navbar-toggle {
+  display: none; }
 
 header .navbar-default {
   background-color: #063350;
   border: none;
   margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #063350 !important;
+  transition: position .5s ease;
   border: none;
   background-color: inherit;
   font-size: 25px; }
+  @media screen and (min-width: 768px) {
+    header .navbar-default {
+      width: 700px; } }
+  @media screen and (min-width: 950px) {
+    header .navbar-default {
+      width: 770px; } }
+  @media screen and (min-width: 1199px) {
+    header .navbar-default {
+      width: 1170px; } }
   header .navbar-default:hover, header .navbar-default:focus {
     background-color: inherit; }
   header .navbar-default .navbar-nav {

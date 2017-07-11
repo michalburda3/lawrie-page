@@ -17,11 +17,39 @@ body
 	color: $font-color
 	font-family: 'Ubuntu Condensed', sans-serif
 
+
+.affix
+	@media screen and (max-width:768px)
+		display: none
+
 header	
+	.navbar-collapse
+		background-color: $bg-color
+
+
+	.affix
+		max-height: 110px
+		@media screen and (max-width:768px)
+			display: none
+
+	.navbar-toggle
+		display: none
 
 	.navbar-default
 		background-color: $bg-color
 		border: none
+		margin-bottom: 0
+		display: flex
+		justify-content: space-between
+		background-color: #063350 !important
+		transition: position .5s ease
+
+		@media screen and (min-width:768px)
+			width: 700px
+		@media screen and (min-width:950px)
+			width: 770px
+		@media screen and (min-width:1199px)
+			width: 1170px
 
 		.navbar-toggle
 		border: none
@@ -32,13 +60,42 @@ header
 			background-color: inherit
 
 		.navbar-nav 
+			margin: 30px 0
+			
+			@media screen and (max-width:1440px)
+				margin: 13px 0
+
+			.active 
+				&:after
+					content: ''
+					display: block
+					height: 2px
+					width: 100%
+					background-color: $contrast-color
+					position: relative
+					top: -20px
+
+				> a
+					background-color: $bg-color
+					color: $font-color
+
+					&:hover,
+					&:active,
+					&:focus
+						background-color: $bg-color
+						color: $font-color
+						outline: none
+
 			li 
 				a 
 					color: $font-color
-					font-size: 3.2rem
+					font-size: 2.2rem
 					text-transform: uppercase
-					margin-right: 5.5rem
-					margin-top: 4.5rem
+					font-weight: 700
+					@media screen and (max-width:1400px)
+						margin-right: 0
+					@media screen and (max-width:1440px)
+						font-size: 1.6rem
 
 					&:after
 						content: ''
@@ -57,25 +114,21 @@ header
 					&:hover,
 					&:focus
 						color: $font-color
-
-
+						outline: none
 	nav
 		
-		height: 20vh
 		margin: 0 auto
 
 		div
 			a 
 				img
-					height: 200px
-					width: 350px
-					margin: 5px 30px 5px
+					width: 250px
+					margin: 0 auto
 
 					@media screen and (max-width:750px)
 						margin: 0
-
-		
-
+					@media screen and (max-width:1440px)
+						width: 170px
 .jumbotron
 	height: 80vh
 	background: url("../img/jumbo2.jpeg") 0/cover no-repeat
@@ -372,19 +425,14 @@ footer
 				color: $contrast-color
 				text-decoration: none
 
+
+
+
+
 @media screen and (max-width: 768px)
-
-	header	
-
-		.navbar-default
-
-			.navbar-toggle
-				font-size: 15px
-				display: none
 
 	.offer
 		
-
 		h2
 			margin: 5rem auto 1rem
 			font-size: 2.5rem

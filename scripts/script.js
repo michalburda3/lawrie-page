@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
 	$("#span_toggle_1").click(function(){
 		$("#toggle_list_1").slideToggle(450);
 	});
@@ -15,12 +13,21 @@ $(document).ready(function(){
 		$("#toggle_list_4").slideToggle(450);
 	});
 
-
 	$('.counter').counterUp({
 		delay: 10,
 		time: 1700
 	});
-});    
+});  
+
+$(function() { 
+	$(".navbar-toggle").on("click", function () {
+		$(this).toggleClass("active");
+	});
+	$('a[href^="#"]').click(function (e) {
+		$('.navbar-collapse').collapse('hide'); 
+		$('.navbar-toggle').removeClass('active'); 
+	});
+});
 
 
 $(function() {
@@ -37,4 +44,5 @@ $(function() {
     }
   });
 });
+
 

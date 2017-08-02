@@ -11,26 +11,19 @@ $contrast-color: #c0392b
 		border-top: none
 		margin: 10px auto
 
-
 body
 	background-color: $bg-color
 	color: $font-color
 	font-family: 'Ubuntu Condensed', sans-serif
 
-
-.affix
-	@media screen and (max-width:768px)
-		display: none
-
 header	
 	.navbar-collapse
 		background-color: $bg-color
 
-
 	.affix
 		max-height: 110px
 		@media screen and (max-width:768px)
-			display: none
+			position: relative
 
 	.navbar-toggle
 		display: none
@@ -48,6 +41,8 @@ header
 			width: 700px
 		@media screen and (min-width:950px)
 			width: 770px
+		@media screen and (min-width:950px)
+			width: 920px
 		@media screen and (min-width:1199px)
 			width: 1170px
 
@@ -73,7 +68,7 @@ header
 					width: 100%
 					background-color: $contrast-color
 					position: relative
-					top: -20px
+					top: -17px
 
 				> a
 					background-color: $bg-color
@@ -328,6 +323,7 @@ header
 		margin-right: auto
 		margin-top: 50px
 		max-width: 600px
+		max-height: 215px
 
 		@media screen and (max-width:762px)
 			max-width: 100%
@@ -426,7 +422,13 @@ footer
 				text-decoration: none
 
 
+.surrey__img
+	margin-top: 50px
+	max-width: 165px
+	max-height: 215px
 
+	@media screen and (max-width:992px)
+		margin: 50px auto 20px
 
 
 @media screen and (max-width: 768px)

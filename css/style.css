@@ -4,10 +4,6 @@ body {
   color: #ecf0f1;
   font-family: 'Ubuntu Condensed', sans-serif; }
 
-@media screen and (max-width: 768px) {
-  .affix {
-    display: none; } }
-
 header .navbar-collapse {
   background-color: #063350; }
 
@@ -15,7 +11,7 @@ header .affix {
   max-height: 110px; }
   @media screen and (max-width: 768px) {
     header .affix {
-      display: none; } }
+      position: relative; } }
 
 header .navbar-toggle {
   display: none; }
@@ -37,6 +33,9 @@ header .navbar-default {
   @media screen and (min-width: 950px) {
     header .navbar-default {
       width: 770px; } }
+  @media screen and (min-width: 950px) {
+    header .navbar-default {
+      width: 920px; } }
   @media screen and (min-width: 1199px) {
     header .navbar-default {
       width: 1170px; } }
@@ -54,7 +53,7 @@ header .navbar-default {
       width: 100%;
       background-color: #c0392b;
       position: relative;
-      top: -20px; }
+      top: -17px; }
     header .navbar-default .navbar-nav .active > a {
       background-color: #063350;
       color: #ecf0f1; }
@@ -279,7 +278,8 @@ header nav {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  max-width: 600px; }
+  max-width: 600px;
+  max-height: 215px; }
   @media screen and (max-width: 762px) {
     .checktrade__img {
       max-width: 100%; } }
@@ -357,6 +357,14 @@ footer {
       footer p a:hover {
         color: #c0392b;
         text-decoration: none; }
+
+.surrey__img {
+  margin-top: 50px;
+  max-width: 165px;
+  max-height: 215px; }
+  @media screen and (max-width: 992px) {
+    .surrey__img {
+      margin: 50px auto 20px; } }
 
 @media screen and (max-width: 768px) {
   .offer h2 {

@@ -279,7 +279,8 @@ header nav {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  max-width: 600px; }
+  max-width: 600px;
+  max-height: 215px; }
   @media screen and (max-width: 762px) {
     .checktrade__img {
       max-width: 100%; } }
@@ -357,6 +358,14 @@ footer {
       footer p a:hover {
         color: #c0392b;
         text-decoration: none; }
+
+.surrey__img {
+  margin-top: 50px;
+  max-width: 165px;
+  max-height: 215px; }
+  @media screen and (max-width: 992px) {
+    .surrey__img {
+      margin: 50px auto 20px; } }
 
 @media screen and (max-width: 768px) {
   .offer h2 {
